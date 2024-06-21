@@ -24,13 +24,13 @@ const data = [
 
 const FeatureBanner = () => {
     return (
-        <div className='bg-[#F4F9FF] py-6 px-4 sm:px36 md:px-48 flex flex-wrap justify-between items-center gap-8'>
+        <div className='bg-[#F4F9FF] py-6 px-4 sm:px36 md:px-44 mx-auto grid grid-cols-2 lg:grid-cols-4 justify-between items-center gap-8'>
             {
                 data.map((item) => (
                     <div className='text-[#00357B] flex flex-col gap-1 justify-center items-center' key={item.title}>
                         <Image src={item.imageUrl} alt={item.title} height={40} width={40} />
                         <h1 className='text-sm'>{item.title}</h1>
-                        <p className='text-3xl font-semibold uppercase'>{item.content}</p>
+                        <p className='text-3xl font-semibold uppercase max-sm:text-2xl'>{item.content}</p>
                         <Image src={'./images/borderdesign.svg'} alt='' width={70} height={10} className='pt-1'/>
                     </div>
                 ))
