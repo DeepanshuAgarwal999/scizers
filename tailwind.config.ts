@@ -12,6 +12,19 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        heroImage: "url('/images/Heroimage.svg')",
+      },
+      colors: {
+        primary: {
+          DEFAULT: "#17ABFF",
+          100: "#00357B",
+        },
+      },
+      boxShadow: {
+        headerBtnShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+      },
+      fontFamily: {
+        oswald: "Oswald",
       },
     },
   },
